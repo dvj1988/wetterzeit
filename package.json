@@ -1,7 +1,7 @@
 {
-  "name": "wetterzeit",
+  "name": "wetter",
   "version": "0.0.1",
-  "description": "Too lazy to go outside ?",
+  "description": "Too lazy to go outside ? Check weather on your cli.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
