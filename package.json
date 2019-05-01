@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/diljitvj/wetterzeit/issues"
   },
-  "homepage": "https://github.com/diljitvj/wetterzeit#readme"
+  "homepage": "https://github.com/diljitvj/wetterzeit#readme",
+  "dependencies": {
+    "dotenv": "^7.0.0",
+    "got": "^9.6.0",
+    "iplocation": "^6.1.0",
+    "public-ip": "^3.1.0"
+  }
 }
