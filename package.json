@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/diljitvj/wetterzeit#readme",
   "dependencies": {
+    "configstore": "^5.0.0",
     "dotenv": "^7.0.0",
     "got": "^9.6.0",
     "iplocation": "^6.1.0",
