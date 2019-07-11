@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 const Conf = require("conf");
 const publicIp = require("public-ip");
 const iplocation = require("iplocation").default;
@@ -15,7 +17,7 @@ const config = new Conf({
 const dsk = config.get("dsk");
 if (!dsk) {
   console.log(
-    "Wetter Zeit uses Dark Sky API to fetch the accurate weather report. Please follow the following steps to create an account and get the API key"
+    "Wetter uses Dark Sky API to fetch the accurate weather report. Please follow the following steps to create an account and get the API key"
   );
   console.log(
     "1. Register for a free account at https://darksky.net/dev/register"
