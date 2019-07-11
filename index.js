@@ -3,6 +3,7 @@ const publicIp = require("public-ip");
 const iplocation = require("iplocation").default;
 const got = require("got");
 var prompt = require("prompt");
+var colors = require("colors/safe");
 prompt.message = "";
 
 const config = new Conf({
@@ -85,12 +86,12 @@ async function fetchWeatherReport(dsk) {
       cloudCover,
       summary
     } = currently;
-    console.log("It is", summary, "outside.");
-    console.log("Temp 🌡: ", tempWithUnit(temperature));
-    console.log("Feels Like: ", tempWithUnit(apparentTemperature));
-    console.log("Humidity 💦 : ", fractionToPercentage(humidity));
-    console.log("Wind Speed 🎐: ", windSpeed, "kmph");
-    console.log("Cloud Cover ⛅: ", fractionToPercentage(cloudCover));
+    console.log("It is", colors.bgBlue(summary), "outside.");
+    console.log("🌡 Temp : ", tempWithUnit(temperature));
+    console.log("🤒 Feels Like: ", tempWithUnit(apparentTemperature));
+    console.log("💦 Humidity : ", fractionToPercentage(humidity));
+    console.log("🎐 Wind Speed : ", windSpeed, "kmph");
+    console.log("⛅ Cloud Cover : ", fractionToPercentage(cloudCover));
   } catch (_) {
     console.log(
       "The Dark Sky API seems to be invalid/expired. Please log on to https://darksky.net/dev/account and enter a valid secret.\n"
