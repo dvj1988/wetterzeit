@@ -1,6 +1,6 @@
 {
   "name": "wetter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Too lazy to go outside ? Check weather on your cli.",
   "main": "index.js",
   "repository": {

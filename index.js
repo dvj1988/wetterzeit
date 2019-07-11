@@ -9,6 +9,7 @@ var colors = require("colors/safe");
 prompt.message = "";
 
 const config = new Conf({
+  projectName: "wetter-nodejs",
   dsk: {
     type: "string"
   }
