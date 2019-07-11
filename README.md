@@ -1,7 +1,7 @@
 # wetterzeit
 Too lazy to go outside ? Weather on your cli !
 
-```js
+```sh
 npm install -g wetter
 ```
 
